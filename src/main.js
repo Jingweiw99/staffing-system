@@ -6,3 +6,5 @@ import App from './App.vue'
 
 const app = createApp(App)
 app.use(ElementPlus).mount('#app')
+
+console.log(import.meta.env)
