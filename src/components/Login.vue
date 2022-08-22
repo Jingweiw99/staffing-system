@@ -7,15 +7,11 @@ export default {
     }
   },
   mounted() {
-    this.$request({
-      method:'get',
-      url:'/login',
-      data:{
-        name:'wangjingwei',
-      },
-    }).then((res)=>{
-      console.log(res)
-    })
+    this.$storage.setItem('user', { name: "张三", age: 18 })
+    console.log(this.$storage.getItem('user'))
+    this.$storage.clearAll()
+    console.log(this.$storage.getItem('user'))
+
   }
 }
 </script>
