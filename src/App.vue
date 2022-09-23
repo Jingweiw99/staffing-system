@@ -1,13 +1,19 @@
-<script>
-export default {
-  
-}
-</script>
-
 <template>
   <router-view></router-view>
 </template>
 
-<style scoped>
+<script>
+export default {
+  name: "app",
+}
+</script>
+  
+
+<style lang="scss">
+@import "./assets/style/index.scss";
+@import "./assets/style/reset.css";
+
+
+
 
 </style>

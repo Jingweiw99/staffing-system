@@ -11,7 +11,7 @@ export default {
     setItem(key, val) {
         let storage = this.getStorage()
         storage[key] = val
-        console.log(config.namespace)
+        // console.log(config.namespace)
         window.localStorage.setItem(config.namespace, JSON.stringify(storage))
     },
     getItem(key) {

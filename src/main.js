@@ -7,12 +7,11 @@ import request from './utils/request'
 import storage from './utils/storage'
 import App from './App.vue'
 
+
 const app = createApp(App)
 
 app.config.globalProperties.$request = request
 app.config.globalProperties.$storage = storage
-
-
 
 
 app.use(ElementPlus).use(router).mount('#app')

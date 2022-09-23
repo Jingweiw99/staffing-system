@@ -1,5 +1,5 @@
 /**
- * 二次封装axios！
+ * 二次封装axios
  */
 
 import axios from 'axios'
